@@ -8,6 +8,7 @@ paragraph.style.color = "blue";
 
 // displaying a message text
 paragraph.textContent = "This is a guessing game";
+paragraph.style.color = "green";
 
 // guessing a number through a prompt
 let guessNumber = Number(prompt("choose a number from 1 to 5"));
@@ -21,7 +22,7 @@ if (guessNumber === secretNumber) {
     ".message"
   ).textContent = `YAY! You got it! The secret number is ${secretNumber}`;
 } else if (guessNumber !== secretNumber) {
-  console.log((document.querySelector(".message").textContent = `Try again`));
+  console.log((document.querySelector(".message").textContent = `You Lost Try Again`));
 } else {
   alert("Do it all over again");
 }
